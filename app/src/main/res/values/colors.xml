@@ -2,14 +2,13 @@
 <resources>
 
     <!-- App Colors -->
-    <color name="colorPrimary">@color/DarkBlue</color>
-    <color name="colorPrimaryDark">@color/LightBlue</color>
-    <color name="colorAccent">#d4f3ef</color>
+    <color name="colorPrimary">@color/DarkGreen</color>
+    <color name="colorPrimaryDark">@color/LightGreen</color>
+    <color name="colorAccent">#f8ffff</color>
 
-    <color name="DarkOrange">#fd8546</color>
-    <color name="DarkBlue">#2b4381</color>
-    <color name="LightBlue">#53b1fb</color>
-    <color name="LightOrange">#febb46</color>
+
+    <color name="DarkGreen">#006a6a</color>
+    <color name="LightGreen">#009d9d</color>
     <color name="DarkGrey">#393e46</color>
 
 </resources>

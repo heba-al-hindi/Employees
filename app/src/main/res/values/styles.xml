@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
 
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -13,7 +13,7 @@
     <style name="EmployeeDetailsTextViewHeadersStyle" parent="Widget.AppCompat.TextView">
 
         <item name="android:padding">@dimen/textViewPadding</item>
-        <item name="android:textColor">@color/DarkBlue</item>
+        <item name="android:textColor">@color/DarkGreen</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
         <item name="android:layout_marginTop">@dimen/text_view_margin_top</item>

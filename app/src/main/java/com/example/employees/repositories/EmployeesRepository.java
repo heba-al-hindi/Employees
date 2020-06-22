@@ -1,8 +1,13 @@
 package com.example.employees.repositories;
 
 import com.example.employees.models.response.Employee;
+import com.example.employees.utils.NetworkUtils;
 
 import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class EmployeesRepository {
 
@@ -28,13 +33,23 @@ public class EmployeesRepository {
 
     // get EmployeesData
     public void getEmployeesData() {
-
         // make Api Call to get Data
+        NetworkUtils.getEmployeeApiManager().getAllEmployees().enqueue(new Callback<ArrayList<Employee>>() {
+            @Override
+            public void onResponse(Call<ArrayList<Employee>> call, Response<ArrayList<Employee>> response) {
+                if (response.body() != null) {
+                    employeeCallbacks.onGetEmployeeSuccess(response.body());
+                }
+            }
 
+            @Override
+            public void onFailure(Call<ArrayList<Employee>> call, Throwable t) {
+                employeeCallbacks.onGetEmployeeFail(t);
 
+            }
+        });
 
     }
-
 
     // initialize employeeCallbacks
     public void setEmployeeCallbacks(EmployeeCallbacks employeeCallbacks) {
@@ -48,7 +63,7 @@ public class EmployeesRepository {
 
         void onGetEmployeeSuccess(ArrayList<Employee> employees);
 
-        void onGetEmployeeFail();
+        void onGetEmployeeFail(Throwable throwable);
     }
 
 }

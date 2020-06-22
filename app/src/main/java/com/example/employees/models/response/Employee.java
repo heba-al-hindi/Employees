@@ -11,23 +11,26 @@ import java.io.Serializable;
 public class Employee implements Serializable {
 
     @SerializedName("id")
-    private String id ;
+    private String id;
     @SerializedName("name")
-    private String username ;
+    private String name;
+    @SerializedName("username")
+    private String username;
     @SerializedName("email")
-    private String email ;
+    private String email;
     @SerializedName("address")
-    private EmployeeAddress employeeAddress ;
+    private EmployeeAddress employeeAddress;
     @SerializedName("phone")
-    private String phone ;
+    private String phone;
     @SerializedName("website")
-    private String website ;
+    private String website;
     @SerializedName("company")
-    private EmployeeCompany employeeCompany ;
+    private EmployeeCompany employeeCompany;
 
 
-    public Employee(String id, String username, String email, EmployeeAddress employeeAddress, String phone, String website, EmployeeCompany employeeCompany) {
+    public Employee(String id, String name, String username, String email, EmployeeAddress employeeAddress, String phone, String website, EmployeeCompany employeeCompany) {
         this.id = id;
+        this.name = name;
         this.username = username;
         this.email = email;
         this.employeeAddress = employeeAddress;
@@ -35,7 +38,6 @@ public class Employee implements Serializable {
         this.website = website;
         this.employeeCompany = employeeCompany;
     }
-
 
     public String getId() {
         return id;
@@ -91,5 +93,13 @@ public class Employee implements Serializable {
 
     public void setEmployeeCompany(EmployeeCompany employeeCompany) {
         this.employeeCompany = employeeCompany;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

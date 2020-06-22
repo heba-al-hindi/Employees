@@ -4,21 +4,28 @@ package com.example.employees.network;
    RetrofitClient Class to get retrofit instance for managing network calls
  */
 
+import java.util.concurrent.TimeUnit;
+
 import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
 
-    private static final String BASE_URL = "";
+    private static final String BASE_URL = "https://jsonplaceholder.typicode.com/";
     private static Retrofit retrofit;
 
     public static Retrofit getRetrofitInstance() {
 
         if (retrofit == null) {
 
-            // create okHttp client and build it
+            // build okHttp client
             OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                    .readTimeout(20, TimeUnit.SECONDS)
+                    .connectTimeout(30, TimeUnit.SECONDS)
+                    .addInterceptor(new HttpLoggingInterceptor()
+                            .setLevel(HttpLoggingInterceptor.Level.BODY))
                     .build();
 
 
@@ -29,7 +36,6 @@ public class RetrofitClient {
                     .client(okHttpClient)
                     .build() ;
         }
-
         // return the instance of Retrofit
         return retrofit;
 

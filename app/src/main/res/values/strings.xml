@@ -14,4 +14,5 @@
     <string name="zipcode">zipcode</string>
     <string name="street">street</string>
     <string name="city">city</string>
+    <string name="welcome">Welcome</string>
 </resources>

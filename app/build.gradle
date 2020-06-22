@@ -23,8 +23,8 @@ android {
 
     // Add Binding Features
     buildFeatures {
-        dataBinding = true
-        // viewBinding = true
+        dataBinding = false
+        viewBinding = true
     }
 
     // To solve Build compatibility issues

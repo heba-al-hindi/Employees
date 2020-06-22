@@ -37,7 +37,7 @@ public class EmployeesViewModel extends ViewModel implements EmployeesRepository
     }
 
     @Override
-    public void onGetEmployeeFail() {
+    public void onGetEmployeeFail(Throwable throwable) {
         // Do Later
 
     }

@@ -20,12 +20,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <view
+    <View
         android:id="@+id/line_one"
         android:layout_width="match_parent"
         android:layout_height="@dimen/lines_height"
-        android:background="@color/LightBlue"
-        android:backgroundTint="@color/LightBlue"
+        android:background="@color/LightGreen"
+        android:backgroundTint="@color/LightGreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_personal_info" />
@@ -50,6 +50,9 @@
                 style="@style/EmployeeDetailsTextViewInfoStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="5dp"
                 android:text="@string/employee_email"
                 app:layout_constraintBottom_toTopOf="@id/tv_website"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -63,6 +66,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/employee_website"
+                android:drawableLeft="@drawable/ic_web"
+                android:drawableStart="@drawable/ic_web"
+                android:drawablePadding="5dp"
                 app:layout_constraintBottom_toTopOf="@id/tv_phone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
@@ -75,6 +81,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/employee_phone"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
@@ -101,12 +110,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/personal_info_container" />
 
-    <view
+    <View
         android:id="@+id/line_two"
         android:layout_width="match_parent"
         android:layout_height="@dimen/lines_height"
-        android:background="@color/LightBlue"
-        android:backgroundTint="@color/LightBlue"
+        android:background="@color/LightGreen"
+        android:backgroundTint="@color/LightGreen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_work_info" />
@@ -132,6 +141,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/company_name"
+                android:drawableStart="@drawable/ic_home_work"
+                android:drawableLeft="@drawable/ic_home_work"
+                android:drawablePadding="5dp"
                 app:layout_constraintBottom_toTopOf="@id/tv_company_role"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
@@ -144,6 +156,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/company_role"
+                android:drawableStart="@drawable/ic_work"
+                android:drawableLeft="@drawable/ic_work"
+                android:drawablePadding="5dp"
                 app:layout_constraintBottom_toTopOf="@id/tv_employee_bs"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
@@ -156,6 +171,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/employee_bs"
+                android:drawableStart="@drawable/ic_bs_degree"
+                android:drawableLeft="@drawable/ic_bs_degree"
+                android:drawablePadding="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
@@ -181,12 +199,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/work_info_container" />
 
-    <view
+    <View
         android:id="@+id/line_three"
         android:layout_width="match_parent"
         android:layout_height="@dimen/lines_height"
-        android:background="@color/LightBlue"
-        android:backgroundTint="@color/LightBlue"
+        android:background="@color/LightGreen"
+        android:backgroundTint="@color/LightGreen"
         app:layout_constraintBottom_toTopOf="@id/address_info_container"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -213,6 +231,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/city"
+                android:drawableStart="@drawable/ic_city"
+                android:drawableLeft="@drawable/ic_city"
+                android:drawablePadding="5dp"
                 app:layout_constraintBottom_toTopOf="@id/tv_street"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
@@ -225,6 +246,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/street"
+                android:drawableStart="@drawable/ic_road"
+                android:drawableLeft="@drawable/ic_road"
+                android:drawablePadding="5dp"
                 app:layout_constraintBottom_toTopOf="@id/tv_zipcode"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
@@ -237,6 +261,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/zipcode"
+                android:drawableStart="@drawable/ic_code"
+                android:drawableLeft="@drawable/ic_code"
+                android:drawablePadding="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0"
@@ -254,7 +281,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.72" />
+        app:layout_constraintGuide_percent="0.75" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

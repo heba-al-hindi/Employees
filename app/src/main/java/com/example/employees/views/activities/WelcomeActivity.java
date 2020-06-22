@@ -37,5 +37,6 @@ public class WelcomeActivity extends AppCompatActivity {
     private void openEmployeeActivity() {
         Intent intent = new Intent(WelcomeActivity.this, EmployeesActivity.class);
         startActivity(intent);
+        finish();
     }
 }

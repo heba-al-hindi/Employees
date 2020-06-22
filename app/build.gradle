@@ -59,4 +59,11 @@ dependencies {
     // OkHttp
     implementation 'com.squareup.okhttp3:logging-interceptor:4.4.1'
 
+    // RxJava
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
+
+    // RxAndroid
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+
+
 }

@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Employees</string>
+    <string name="employee_name">"Name "</string>
+    <string name="toolbar_title">Employees</string>
+    <string name="personal_information">Personal Info</string>
+    <string name="employee_email">employee@email.com</string>
+    <string name="employee_phone">**********</string>
+    <string name="employee_website">www.employee.com</string>
+    <string name="work_information">Work Info</string>
+    <string name="company_name">company name</string>
+    <string name="company_role">company role</string>
+    <string name="employee_bs">bs</string>
+    <string name="address_information">Address Info</string>
+    <string name="zipcode">zipcode</string>
+    <string name="street">street</string>
+    <string name="city">city</string>
 </resources>

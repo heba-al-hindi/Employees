@@ -1,0 +1,15 @@
+<resources>
+	<dimen name="textViewPadding">3.6dp</dimen>
+	<dimen name="employee_details_activity_padding">14.4dp</dimen>
+	<dimen name="card_container_margin_top">3.6dp</dimen>
+	<dimen name="lines_height">3.6dp</dimen>
+	<dimen name="card_container_radius">9dp</dimen>
+	<dimen name="text_view_margin_top">3.6dp</dimen>
+	<dimen name="fragment_height">225dp</dimen>
+	<dimen name="circle_image_view_width">72dp</dimen>
+	<dimen name="circle_image_view_height">72dp</dimen>
+	<dimen name="circle_image_view_margin_st_ed">9dp</dimen>
+	<dimen name="employee_name_textView_marginStart">3.6dp</dimen>
+	<dimen name="employee_card_margin">3.6dp</dimen>
+	<dimen name="circle_image_view_padding_st_ed">9dp</dimen>
+</resources>

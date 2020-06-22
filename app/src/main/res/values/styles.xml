@@ -1,10 +1,45 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <!-- Header TextView in EmployeeDetails Activity Style -->
+    <style name="EmployeeDetailsTextViewHeadersStyle" parent="Widget.AppCompat.TextView">
+
+        <item name="android:padding">@dimen/textViewPadding</item>
+        <item name="android:textColor">@color/DarkBlue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:layout_marginTop">@dimen/text_view_margin_top</item>
+
+    </style>
+
+
+    <!-- CardView in EmployeeDetails Activity Style -->
+    <style name="InfoContainersCardViewStyle" parent="Widget.MaterialComponents.CardView">
+
+        <item name="cardBackgroundColor">@color/colorAccent</item>
+        <item name="cardCornerRadius">@dimen/card_container_radius</item>
+        <item name="android:layout_marginTop">@dimen/card_container_margin_top</item>
+
+    </style>
+
+    <!--  Info TextView in EmployeeDetails Activity Style -->
+    <style name="EmployeeDetailsTextViewInfoStyle" parent="Widget.AppCompat.TextView">
+
+        <item name="android:padding">@dimen/textViewPadding</item>
+        <item name="android:textColor">@color/DarkGrey</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">@dimen/text_view_margin_bottom</item>
+
+    </style>
+
+
+    <dimen name="text_view_margin_bottom">1dp</dimen>
 </resources>

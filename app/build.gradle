@@ -26,6 +26,12 @@ android {
         dataBinding = true
         // viewBinding = true
     }
+
+    // To solve Build compatibility issues
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
